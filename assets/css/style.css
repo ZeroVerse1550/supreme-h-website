@@ -13,11 +13,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('../logo.png'); /* Background Logo */
+  background-color: #f4f4f4;
+  background-image: url('../../logo.png'); /* Background Logo */
   background-repeat: no-repeat;
   background-position: center;
   background-size: 200px;
-  opacity: 0.1;
 }
 
 header {
@@ -38,6 +38,45 @@ p {
   line-height: 1.6;
 }
 
+main {
+  width: 100%;
+  max-width: 960px;
+  padding: 1rem;
+}
+
+.about,
+.info,
+.gallery {
+  background: #ffffff;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.about img {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
 footer {
   text-align: center;
   padding: 1rem;
@@ -52,7 +91,7 @@ footer::before {
   display: block;
   width: 100px;
   height: 100px;
-  background-image: url('../logo.png'); /* Footer Logo */
+  background-image: url('../../logo.png'); /* Footer Logo */
   background-size: cover;
   margin: 0 auto 1rem;
 }
